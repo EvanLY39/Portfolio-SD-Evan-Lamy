@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Evan Lamy - Science des données</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS Personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Bouton Retour en haut -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- En-tête / Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">EVAN<span>.LAMY</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#parcours">Mon année</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Evan Lamy</h1>
+                <p>Étudiant en BUT Science des données | 18 ans</p>
+                <p>Université Marie Louis Pasteur de Dole</p>
+                <p class="hero-desc">
+                    “Passionné par les statistiques et l’analyse de données, je m’intéresse particulièrement à
+                    l’exploitation des données sportives pour comprendre les performances et prendre de meilleures
+                    décisions.”
+                </p>
+                <div class="hero-btns">
+                    <a href="#parcours" class="btn btn-primary">Voir mon parcours</a>
+                    <a href="#projets" class="btn btn-outline">Voir mes projets</a>
+                    <a href="CV Evan Lamy.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-circle">
+                    <img src="1773224705117.jpg" alt="Evan Lamy" id="profileImg">
+                    <!-- Si la photo n'existe pas encore, un cercle de couleur s'affiche -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos de moi -->
+    <section id="propos">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <p>
+                    Passionné par les statistiques depuis tout petit, j'ai choisi le BUT Science des données à
+                    l'Université Marie Louis Pasteur de Dole pour approfondir mes connaissances, notamment dans le
+                    domaine du sport. Je m'intéresse aux données sportives de haut niveau comme des divisions moins
+                    médiatisées pour en extraire des tendances et analyser les performances.
+                </p>
+                <br>
+                <p>
+                    À 18 ans, j'ai déjà acquis des bases solides en SQL, Python et R, et je maîtrise des outils de
+                    visualisation comme Power BI. Ma formation me permet de transformer les chiffres en décisions
+                    concrètes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mon année en BUT -->
+    <section id="parcours" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Mon année en BUT Science des données</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fas fa-database"></i> Bases de Données</h3>
+                    <p>Gestion SQL avec Access et bases relationnelles.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fab fa-python"></i> Programmation</h3>
+                    <p>Développement Python, R et bases de l'algorithmique.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-calculator"></i> Mathématiques</h3>
+                    <p> Mathématique , Algèbre et Probabilités appliquées.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-chart-bar"></i> Statistiques</h3>
+                    <p>Statistique descriptive et Statitique inférentielle .</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-file-excel"></i> Outils BI</h3>
+                    <p>Reporting avec Power BI et maîtrise de Tableur (Excel).</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-file-alt"></i> Projets SAE</h3>
+                    <p>Mise en situation prefessionnelle .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Techniques</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">SQL (Access)</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">QGIS</span>
+                        <span class="skill-tag">Statistiques</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-flask"></i> Qualités</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Dynamique</span>
+                        <span class="skill-tag">Rigoureux</span>
+                        <span class="skill-tag">Bon relationnel</span>
+                        <span class="skill-tag">Curieux</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-user"></i> Langues</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Anglais (B1)</span>
+                        <span class="skill-tag">Espagnol (B1)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Projets réalisés</h2>
+            <div class="grid">
+                <!-- Projet 1 -->
+                <div class="card">
+                    <h3>Enquête de satisfaction — Association La Gourmande du Chat Perché</h3>
+                    <p>Étude complète réalisée dans le cadre du BUT SD : de la rédaction du questionnaire à l'analyse
+                        des résultats.</p>
+                    <ul class="project-steps">
+                        <li>Rédaction et administration du questionnaire</li>
+                        <li>Collecte des réponses sur le terrain</li>
+                        <li>Analyse des données issues de l'enquête</li>
+                        <li>Restitution écrite et orale</li>
+                    </ul>
+                    <div class="skill-list">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Statistiques</span>
+                        <span class="skill-tag">Reporting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Notes -->
+    <section id="notes">
+        <div class="container">
+            <h2 class="section-title">Notes du premier semestre</h2>
+            <div class="chart-container" style="position: relative; height:400px; width:100%; margin-bottom: 3rem;">
+                <canvas id="gradesChart"></canvas>
+            </div>
+
+            <div id="gradeDetails"
+                style="text-align: center; margin-bottom: 2rem; padding: 1rem; background: #f1f5f9; border-radius: 8px; display: none;">
+                <h3 id="detailSubject">Matière</h3>
+                <p id="detailNote" style="font-size: 1.5rem; color: var(--accent-color); font-weight: 700;">--/20</p>
+            </div>
+
+            <div class="table-container">
+                <table id="gradesTable">
+                    <thead>
+                        <tr>
+                            <th>UE</th>
+                            <th>Matière</th>
+                            <th>Note / 20</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- UE 1.1 -->
+                        <tr class="ue-row">
+                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.1 - Traiter les données
+                                (Moyenne: 12.80)</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>Tableur et reporting</td>
+                            <td>11.75</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>BDD relationnelles 1</td>
+                            <td>10.88</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>Bases de la programmation 1</td>
+                            <td>07.44</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>PPP (Projet Pro.)</td>
+                            <td>13.60</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>SAE Reporting</td>
+                            <td>16.40</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>SAE Écrit. et Lect. de fichiers</td>
+                            <td>16.40</td>
+                        </tr>
+
+                        <!-- UE 1.2 -->
+                        <tr class="ue-row">
+                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.2 - Analyser
+                                statistiquement (Moyenne: 13.46)</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>Statistique descriptive 1</td>
+                            <td>14.65</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>Probabilités 1</td>
+                            <td>10.29</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>Mathématiques - analyse</td>
+                            <td>08.95</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>SAE Prépa. et synth. données</td>
+                            <td>15.48</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>SAE Analyse d'enquête</td>
+                            <td>15.93</td>
+                        </tr>
+
+                        <!-- UE 1.3 -->
+                        <tr class="ue-row">
+                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.3 - Valoriser une
+                                production (Moyenne: 13.57)</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>Anglais de spécialité</td>
+                            <td>15.67</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>Communication</td>
+                            <td>11.42</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>Découv. données entrepr.</td>
+                            <td>15.70</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>SAE Apprendre la prod.</td>
+                            <td>14.80</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>SAE Prés. anglais éco.</td>
+                            <td>11.20</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>SAE Mise en oeuvre enquête</td>
+                            <td>12.06</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Mon CV</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <p><strong>2025-2028</strong> : BUT Sciences des Données - IUT Besançon Vesoul Dole</p>
+                    <p><strong>2025</strong> : Baccalauréat général (Maths / SI) - Lycée Duhamel Dole</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-briefcase"></i> Expériences</h3>
+                    <p><strong>Association gourmande du chat perché</strong> : Étude de satisfaction (Redaction,
+                        Collecte, Analyse).</p>
+                    <p><strong>Bénévole sportif</strong> : Championnats de France de tir (Accueil, Service, Vente).</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-heart"></i> Centres d'intérêt</h3>
+                    <p>Tir sportif (carabine 10m en club), Sport (suivi TV et analyse data), Géographie.</p>
+                    <p>Titulaire du permis B et véhiculé.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="CV Evan Lamy.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Télécharger
+                    mon CV complet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Note Personnelle -->
+    <section id="note-perso">
+        <div class="container">
+            <h2 class="section-title">Note personnelle</h2>
+            <div class="personal-note">
+                <p>Passionné par les chiffres depuis mon plus jeune âge, je cherche à allier ma rigueur mathématique à
+                    ma passion pour le sport. Mon objectif est de devenir un expert en analyse de données sportives pour
+                    aider à la prise de décision stratégique.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>evanlamy1@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/evan-lamy</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>github.com/evanlamy</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ville</h3>
+                    <p>39100 Goux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio Evan Lamy</p>
+            <p class="footer-text">Conçu pour l'excellence en Science des Données.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
