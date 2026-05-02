@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- CSS Personnalisé -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,7 +32,6 @@
                 <li><a href="#parcours">Mon année</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
-                <li><a href="#notes">Notes</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -52,9 +49,8 @@
                 <p>Étudiant en BUT Science des données | 18 ans</p>
                 <p>Université Marie Louis Pasteur de Dole</p>
                 <p class="hero-desc">
-                    “Passionné par les statistiques et l’analyse de données, je m’intéresse particulièrement à
-                    l’exploitation des données sportives pour comprendre les performances et prendre de meilleures
-                    décisions.”
+                    “Passionné par les statistiques et l’analyse de données, je souhaite développer mes compétences
+                    pour transformer des données brutes en informations claires, utiles et exploitables .”
                 </p>
                 <div class="hero-btns">
                     <a href="#parcours" class="btn btn-primary">Voir mon parcours</a>
@@ -188,137 +184,6 @@
         </div>
     </section>
 
-    <!-- Section Notes -->
-    <section id="notes">
-        <div class="container">
-            <h2 class="section-title">Notes du premier semestre</h2>
-            <div class="chart-container" style="position: relative; height:400px; width:100%; margin-bottom: 3rem;">
-                <canvas id="gradesChart"></canvas>
-            </div>
-
-            <div id="gradeDetails"
-                style="text-align: center; margin-bottom: 2rem; padding: 1rem; background: #f1f5f9; border-radius: 8px; display: none;">
-                <h3 id="detailSubject">Matière</h3>
-                <p id="detailNote" style="font-size: 1.5rem; color: var(--accent-color); font-weight: 700;">--/20</p>
-            </div>
-
-            <div class="table-container">
-                <table id="gradesTable">
-                    <thead>
-                        <tr>
-                            <th>UE</th>
-                            <th>Matière</th>
-                            <th>Note / 20</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- UE 1.1 -->
-                        <tr class="ue-row">
-                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.1 - Traiter les données
-                                (Moyenne: 12.80)</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>Tableur et reporting</td>
-                            <td>11.75</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>BDD relationnelles 1</td>
-                            <td>10.88</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>Bases de la programmation 1</td>
-                            <td>07.44</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>PPP (Projet Pro.)</td>
-                            <td>13.60</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>SAE Reporting</td>
-                            <td>16.40</td>
-                        </tr>
-                        <tr>
-                            <td>1.1</td>
-                            <td>SAE Écrit. et Lect. de fichiers</td>
-                            <td>16.40</td>
-                        </tr>
-
-                        <!-- UE 1.2 -->
-                        <tr class="ue-row">
-                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.2 - Analyser
-                                statistiquement (Moyenne: 13.46)</td>
-                        </tr>
-                        <tr>
-                            <td>1.2</td>
-                            <td>Statistique descriptive 1</td>
-                            <td>14.65</td>
-                        </tr>
-                        <tr>
-                            <td>1.2</td>
-                            <td>Probabilités 1</td>
-                            <td>10.29</td>
-                        </tr>
-                        <tr>
-                            <td>1.2</td>
-                            <td>Mathématiques - analyse</td>
-                            <td>08.95</td>
-                        </tr>
-                        <tr>
-                            <td>1.2</td>
-                            <td>SAE Prépa. et synth. données</td>
-                            <td>15.48</td>
-                        </tr>
-                        <tr>
-                            <td>1.2</td>
-                            <td>SAE Analyse d'enquête</td>
-                            <td>15.93</td>
-                        </tr>
-
-                        <!-- UE 1.3 -->
-                        <tr class="ue-row">
-                            <td colspan="3" style="font-weight: 700; background: #e2e8f0;">UE 1.3 - Valoriser une
-                                production (Moyenne: 13.57)</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>Anglais de spécialité</td>
-                            <td>15.67</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>Communication</td>
-                            <td>11.42</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>Découv. données entrepr.</td>
-                            <td>15.70</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>SAE Apprendre la prod.</td>
-                            <td>14.80</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>SAE Prés. anglais éco.</td>
-                            <td>11.20</td>
-                        </tr>
-                        <tr>
-                            <td>1.3</td>
-                            <td>SAE Mise en oeuvre enquête</td>
-                            <td>12.06</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
 
     <!-- Section CV -->
     <section id="cv" class="bg-light">
@@ -354,9 +219,10 @@
         <div class="container">
             <h2 class="section-title">Note personnelle</h2>
             <div class="personal-note">
-                <p>Passionné par les chiffres depuis mon plus jeune âge, je cherche à allier ma rigueur mathématique à
-                    ma passion pour le sport. Mon objectif est de devenir un expert en analyse de données sportives pour
-                    aider à la prise de décision stratégique.</p>
+                <p>Passionné par les chiffres depuis mon plus jeune âge, je souhaite mettre ma rigueur et mon
+                    esprit d’analyse au service de projets variés. Mon objectif est de développer mes compétences en
+                    analyse, traitement et visualisation de données afin d’aider les entreprises à mieux comprendre
+                    leurs données et à prendre les décisions qui soient les plus pertinentes possibles.</p>
             </div>
         </div>
     </section>
@@ -384,7 +250,7 @@
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Ville</h3>
-                    <p>39100 Goux</p>
+                    <p>39100 Dole</p>
                 </div>
             </div>
         </div>
